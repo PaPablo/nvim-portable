@@ -1,3 +1,6 @@
 os="linux64"
 nvim_version="0.4.4"
-config_folder="nvim-base-config"
+config_url="https://github.com/PaPablo/nvim-simple-config/archive/master.zip"
+config_folder="nvim-simple-config"
+config_branch="master"
+

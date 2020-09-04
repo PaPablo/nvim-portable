@@ -5,6 +5,14 @@ wget "https://github.com/neovim/neovim/releases/download/v"$nvim_version"/nvim-"
 mkdir nvim
 tar xvf nvim.tar.gz
 
+# Download config and extract to folder
+
+wget ${config_url}
+unzip ${config_branch}.zip
+rm ${config_branch}.zip
+mv ${config_folder}-${config_branch} ${config_folder}
+
 # Config are in the folder nvim-base-config
 
-echo "${PWD}/nvim-${os}/bin/nvim -u ${PWD}/nvim-base-config/init.vim" > run-nvim
+echo "${PWD}/nvim-${os}/bin/nvim -u ${PWD}/${config_folder}/init.vim" > run-nvim
+cmod +x run-nvim

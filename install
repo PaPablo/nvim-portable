@@ -2,7 +2,6 @@
 source ./settings
 
 wget "https://github.com/neovim/neovim/releases/download/v"$nvim_version"/nvim-"$os".tar.gz" -O nvim.tar.gz
-mkdir nvim
 tar xvf nvim.tar.gz
 
 # Download config and extract to folder

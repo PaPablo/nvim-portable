@@ -1,0 +1,3 @@
+tag=nvim-portable-test
+docker build -t ${tag} .
+docker run -ti ${tag} bash

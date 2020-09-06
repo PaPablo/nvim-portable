@@ -15,4 +15,4 @@ mv ${config_folder}-${config_branch} ${config_folder}
 # Config are in the folder nvim-base-config
 
 echo "${PWD}/nvim-${os}/bin/nvim -u ${PWD}/${config_folder}/init.vim" > run-nvim
-cmod +x run-nvim
+chmod +x run-nvim
